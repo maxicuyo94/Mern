@@ -1,0 +1,25 @@
+ @api=http://localhost:3000
+GET {{api}}/videos
+###
+GET {{api}}/videos/6125aee961c3f7157011d1f1
+###
+GET {{api}}/videos/asdfasdf
+###
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url":"https://www.youtube.com/watch?v=wOLo-B7mrZM",
+    "title":"MERN & typescript 2",
+    "description":"MERN STACK & Typescript (Mongodb, Express, React, Node con Typescript) - #2 Frontend"
+}
+
+# {
+#     "url":"https://www.youtube.com/watch?v=_RZ-T6TxP7w&t=1506s",
+#     "title":"MERN & typescript 1",
+#     "description":"MERN STACK & Typescript (Mongodb, Express, React, Node con Typescript) - #1 Backend"
+# }
+###
+PUT   {{api}}/videos/6125aee961c3f7157011d1f1
+###
+DELETE   {{api}}/videos/6125aee961c3f7157011d1f1
